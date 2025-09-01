@@ -1,0 +1,98 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fefefe; /* cor de fundo clara */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.header img {
+  height: 50px;
+}
+
+/* Menu de navegação */
+.Header {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.Header li a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px; /* aumentei para ficar mais próximo da imagem */
+  padding: 6px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+/* Itens Roxos */
+.nav-item-roxo a {
+  background-color: #DFC8EF;
+}
+
+.nav-item-roxo a:hover {
+  background-color: #C9A3E2;
+}
+
+/* Itens Laranja */
+.nav-item-laranja a {
+  background-color: #EE9866;
+}
+
+.nav-item-laranja a:hover {
+  background-color: #E77A4C;
+}
+
+/* Botões de autenticação */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Botão Login */
+.btn-login {
+  background-color: #eb944a; /* laranja */
+  color: black;
+  border: 1px solid black;
+}
+
+.btn-login:hover {
+  background-color: #e07a1f;
+}
+
+/* Botão Registro */
+.btn-registro {
+  background-color: #DFC8EF; /* lilás */
+  color: black; 
+  border: 1px solid black;
+}
+
+.btn-registro:hover {
+  background-color: #C9A3E2;
+}
