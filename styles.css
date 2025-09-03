@@ -96,3 +96,68 @@
 .btn-registro:hover {
   background-color: #C9A3E2;
 }
+
+  footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    position: min-height;
+    bottom: 0;
+    left: 0;
+    color: #333;
+    z-index: 10;
+  }
+  
+  #footer_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  #footer_texts {
+    text-align: left;
+  }
+  
+  #footer_texts h3,
+  #footer_texts h5 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  #footer_logo img {
+    width: 180px;
+    height: auto;
+  }
+  
+  #footer_email {
+    padding-right: 10%;
+  }
+  
+  #footer_email i {
+    font-size: 1.25rem;
+    color: #805aed;
+  }
+  
+  #footer_copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
+    padding: 0.5rem;
+    font-weight: 100;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    #footer_content {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    #footer_texts,
+    #footer_email {
+      text-align: center;
+    }
+  }
+  
