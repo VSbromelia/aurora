@@ -1,9 +1,10 @@
 /* Reset básico */
-* {
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  letter-spacing: 0.2px;
 }
 
 /* Header */
@@ -12,16 +13,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #fefefe; /* cor de fundo clara */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #fefefe;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo */
 .header img {
   height: 50px;
 }
 
-/* Menu de navegação */
 .Header {
   list-style: none;
   display: flex;
@@ -33,35 +32,44 @@
   display: block;
   text-decoration: none;
   font-weight: bold;
-  font-size: 12px; /* aumentei para ficar mais próximo da imagem */
+  font-size: 12px;
   padding: 6px 15px;
   border-radius: 5px;
   transition: all 0.3s ease;
   color: black;
 }
 
-/* Itens Roxos */
 .nav-item-roxo a {
-  background-color: #DFC8EF;
+  background-color: #dfc8ef;
 }
 
 .nav-item-roxo a:hover {
-  background-color: #C9A3E2;
+  background-color: #c9a3e2;
 }
 
-/* Itens Laranja */
 .nav-item-laranja a {
-  background-color: #EE9866;
+  background-color: #ee9866;
 }
 
 .nav-item-laranja a:hover {
-  background-color: #E77A4C;
+  background-color: #e77a4c;
 }
 
 /* Botões de autenticação */
 .auth-buttons {
   display: flex;
   gap: 10px;
+}
+
+/* links da header */
+.header ul li a {
+  display: inline-block;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+/* efeito ao passar o mouse */
+.header ul li a:hover {
+  transform: scale(1.08); /* aumenta levemente (8%) */
 }
 
 .btn {
@@ -75,9 +83,8 @@
   text-align: center;
 }
 
-/* Botão Login */
 .btn-login {
-  background-color: #eb944a; /* laranja */
+  background-color: #eb944a;
   color: black;
   border: 1px solid black;
 }
@@ -86,38 +93,21 @@
   background-color: #e07a1f;
 }
 
-/* Botão Registro */
 .btn-registro {
-  background-color: #DFC8EF; /* lilás */
-  color: black; 
+  background-color: #dfc8ef;
+  color: black;
   border: 1px solid black;
 }
 
 .btn-registro:hover {
-  background-color: #C9A3E2;
+  background-color: #c9a3e2;
 }
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  letter-spacing: 0.2px;
-
-}
-
-main {
-  height: 80vh;
-}
-
+/* Footer */
 footer {
   width: 100%;
   background-color: #f1f1f1;
-  position: min-height;
-  bottom: 0;
-  left: 0;
   color: #333;
-  z-index: 10;
 }
 
 #footer_content {
@@ -144,10 +134,6 @@ footer {
   height: auto;
 }
 
-#footer_email {
-  padding-right: 70%;
-}
-
 #footer_email i {
   font-size: 1.25rem;
   color: #805aed;
@@ -161,51 +147,293 @@ footer {
   font-weight: 100;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
   #footer_content {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-
   #footer_texts,
   #footer_email {
     text-align: center;
   }
 }
 
-/* Página inicial */
+/* Main - Banco de Talentos */
 .main-content {
-  background-color: #805AED;
-}
-
-.container {
+  background-color: #EE9866;
+  padding: 40px 20px;
   display: flex;
   justify-content: center;
-  gap: 40px;
-  margin-top: 50px;
+  min-height: 100vh;
 }
 
-.circle {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.formulario {
+  background: #DFC8EF;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+}
+
+.formulario h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #2e2e2e;
   margin-bottom: 10px;
 }
 
-.label {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-top: 10px;
+.subtitulo {
+  color: #805aed;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
-/* Cores */
-.painel { background-color: #ec9461; }
-.teste { background-color: #6042a6; }
-.banco { background-color: #dec6f2; }
-.conteudo { background-color: #ff7133; }
+/* Form Elements */
+form label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #2e2e2e;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form input[type="number"] {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  background-color: #fff;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus,
+form input[type="number"]:focus {
+  border-color: #805aed;
+  outline: none;
+}
+
+/* Radio e Checkbox */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin: 8px 0;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #2e2e2e;
+}
+
+/* 🔹 Estilo único e padronizado para todos */
+input[type="radio"],
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FF6214;
+  border-radius: 50%; /* sempre redondo */
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+/* 🔹 Preenchido quando marcado */
+input[type="radio"]:checked::after,
+input[type="checkbox"]:checked::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #6750A4;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Botão Finalizar */
+.btn-finalizar {
+  margin-top: 25px;
+  background-color: #805aed;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn-finalizar:hover {
+  background-color: #6d47d9;
+}
+
+/* Inputs "Outro" */
+.outro-input {
+  margin-left: 8px;
+  max-width: 250px;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    padding: 25px 20px;
+  }
+  .main-content {
+    padding: 20px 10px;
+  }
+  .radio-group,
+  .checkbox-group {
+    flex-direction: column;
+  }
+  #footer_content {
+    grid-template-columns: 1fr;
+  }
+  .outro-input {
+    display: block;
+    margin-left: 0;
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  background-color: #fff;
+}
+
+/* Ajuste de tamanho e alinhamento para radios e checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  width: 18px;   /* deixa todos com mesmo tamanho */
+  height: 18px;  /* altura igual */
+  margin: 0 8px 0 0; /* espaço à direita */
+  vertical-align: middle; /* alinha com o texto */
+  accent-color: #a64ac9; /* cor personalizada (moderno, funciona nos navegadores atuais) */
+}
+
+/* Garante que os labels fiquem alinhados */
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: center;  /* centraliza verticalmente */
+  gap: 6px;             /* espaço entre o input e o texto */
+  line-height: 1.4;
+}
+
+/* Força todos os radios a serem círculos perfeitos */
+input[type="radio"] {
+  appearance: none;       /* remove estilo padrão do navegador */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 18px;
+  height: 18px;
+  border: 2px solid #FF6214;
+  border-radius: 50%;     /* 🔹 garante círculo */
+  cursor: pointer;
+  position: relative;
+}
+
+/* bolinha preenchida no meio quando selecionado */
+input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #6750A4;
+  border-radius: 50%;     /* 🔹 garante círculo interno */
+}
+
+/* Deixa TODOS iguais (checkbox e radio) */
+input[type="radio"],
+input[type="checkbox"] {
+  appearance: none;        /* remove estilo padrão */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 18px;
+  height: 18px;
+  border: 2px solid #FF6214;
+  border-radius: 50%;      /* 🔹 sempre bolinha */
+  cursor: pointer;
+  position: relative;
+  margin-right: 6px;
+}
+
+/* Bolinha preenchida quando marcado */
+input[type="radio"]:checked::before,
+input[type="checkbox"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #6750A4;
+  border-radius: 50%;      /* 🔹 mantém redondo */
+}
+
+/* estilo base para todos os radios */
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ff6600; /* laranja */
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background: #fff;
+}
+
+/* quando marcado */
+input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #5a2d82; /* roxo */
+  border-radius: 50%;
+  transform: translate(-50%, -50%); /* centraliza perfeitamente */
+}
 
   
