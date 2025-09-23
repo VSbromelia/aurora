@@ -67,36 +67,6 @@
   transform: scale(1.08); /* aumenta levemente (8%) */
 }
 
-.btn {
-  padding: 5px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  text-align: center;
-}
-
-.btn-login {
-  background-color: #eb944a;
-  color: black;
-  border: 1px solid black;
-}
-
-.btn-login:hover {
-  background-color: #e07a1f;
-}
-
-.btn-registro {
-  background-color: #dfc8ef;
-  color: black;
-  border: 1px solid black;
-}
-
-.btn-registro:hover {
-  background-color: #c9a3e2;
-}
 
 /* Footer */
 footer {
