@@ -55,11 +55,6 @@
   background-color: #e77a4c;
 }
 
-/* Botões de autenticação */
-.auth-buttons {
-  display: flex;
-  gap: 10px;
-}
 
 /* links da header */
 .header ul li a {
