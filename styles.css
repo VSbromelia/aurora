@@ -1,404 +1,1173 @@
 /* Reset básico */
-{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.2px;
+}
+
+
+
+
+/* =================== HEADER =================== */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+
+#logo-header {
+    height: 50px;
+}
+
+
+
+
+#nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+
+#nav-menu li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+
+
+
+#nav-menu li a:hover {
+    transform: scale(1.08);
+}
+
+
+
+
+/* Cores dos botões do menu */
+.nav-item-roxo a {
+    background-color: #DFC8EF;
+}
+
+
+
+
+.nav-item-roxo a:hover {
+    background-color: #C9A3E2;
+}
+
+
+
+
+.nav-item-laranja a {
+    background-color: #EE9866;
+}
+
+
+
+
+.nav-item-laranja a:hover {
+    background-color: #E77A4C;
+}
+
+
+
+
+
+
+
+
+/* =================== MAIN =================== */
+#main-content {
+    background-color: #805AED;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+#white-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+}
+
+
+
+
+.white-box-content {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+
+
+
+.white-box-paragraph {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+
+
+
+.section-info {
+    margin-bottom: 15px;
+}
+
+
+
+
+/* =================== CÍRCULOS =================== */
+#circles-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+
+.circle-wrapper {
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.label {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+
+
+/* Cores dos círculos */
+.painel {
+    background-color: #ec9461;
+}
+
+
+
+
+.teste {
+    background-color: #6042a6;
+}
+
+
+
+
+.banco {
+    background-color: #dec6f2;
+}
+
+
+
+
+.conteudo {
+    background-color: #ff7133;
+}
+
+
+
+
+/* =================== FOOTER =================== */
+
+
+#footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+
+
+
+#footer_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+
+
+
+#footer_texts {
+    text-align: left;
+}
+
+
+
+
+#footer_texts h3,
+#footer_texts h5 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #000;
+}
+
+
+
+
+#footer_logo img {
+    width: 180px;
+    height: auto;
+}
+
+
+
+
+#footer_email i {
+    font-size: 1.25rem;
+    color: #805aed;
+}
+
+
+
+
+#footer_copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
+    padding: 0.5rem;
+    font-weight: 100;
+}
+
+
+
+
+@media (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    #footer_texts,
+    #footer_email {
+        text-align: center;
+    }
+}
+
+
+/* ======================================================================================================================================== */
+/* banco de talentos */
+/* ===== RESET BÁSICO ===== */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
 }
 
-/* Header */
-.header {
+
+
+
+/* ===== BODY ===== */
+body {
+  background-color: #ee9866;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/* ===== HEADER ===== */
+.header-bdt {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #fefefe;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.header img {
-  height: 50px;
+
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.Header {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-  align-items: center;
+
+
+
+#logo-header {
+    height: 50px;
 }
 
-.Header li a {
-  display: block;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 12px;
-  padding: 6px 15px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  color: black;
+
+
+
+#nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
+
+
+
+#nav-menu li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+
+
+
+#nav-menu li a:hover {
+    transform: scale(1.08);
+}
+
+
+
+
+/* Cores dos botões do menu */
 .nav-item-roxo a {
-  background-color: #dfc8ef;
+    background-color: #DFC8EF;
 }
+
+
+
 
 .nav-item-roxo a:hover {
-  background-color: #c9a3e2;
+    background-color: #C9A3E2;
 }
+
+
+
 
 .nav-item-laranja a {
-  background-color: #ee9866;
+    background-color: #EE9866;
 }
+
+
+
 
 .nav-item-laranja a:hover {
-  background-color: #e77a4c;
+    background-color: #E77A4C;
 }
 
 
-/* links da header */
-.header ul li a {
-  display: inline-block;
-  transition: transform 0.5s ease, color 0.5s ease;
+/* ===== MAIN CONTENT ===== */
+.main-content-bdt {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  flex-grow: 1;
+  /* Para crescer e empurrar o footer pra baixo */
 }
 
-/* efeito ao passar o mouse */
-.header ul li a:hover {
-  transform: scale(1.08); /* aumenta levemente (8%) */
-}
 
 
-/* Footer */
-footer {
+
+/* ===== FORMULÁRIO ===== */
+.formulario-bdt {
+  background: #dfc8ef;
+  border-radius: 12px;
+  padding: 34px 36px;
+  max-width: 780px;
   width: 100%;
-  background-color: #f1f1f1;
-  color: #333;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
+
+
+
+
+.header-form-bdt {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+.header-form-bdt h1 {
+  color: oklab(0% 0 0);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+
+
+
+.subtitulo-bdt {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* ===== CAMPOS ===== */
+.field-group-bdt {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.field-group-bdt label {
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
+  color: #2e2e2e;
+  font-size: 15px;
+}
+
+
+
+
+input[type="text"],
+input[type="email"],
+textarea,
+.input-outro-bdt {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 2px solid rgba(128,90,237,0.9);
+  background: #fff;
+  font-size: 15px;
+  outline: none;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+
+
+
+input::placeholder,
+textarea::placeholder {
+  color: #9a9a9a;
+}
+
+
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+.input-outro-bdt:focus {
+  border-color: #5a2d82;
+  box-shadow: 0 6px 18px rgba(90,45,130,0.08);
+}
+
+
+
+
+textarea.textarea-bdt {
+  min-height: 120px;
+  resize: vertical;
+}
+
+
+
+
+/* ===== RADIO / CHECKBOX ===== */
+.radio-group-bdt,
+.checkbox-group-bdt {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+
+
+
+.radio-group-bdt label,
+.checkbox-group-bdt label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #222;
+}
+
+
+
+
+.radio-group-bdt input[type="radio"],
+.checkbox-group-bdt input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ff6600;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+
+
+
+.radio-group-bdt input[type="radio"]::after,
+.checkbox-group-bdt input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #5a2d82;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  transition: transform .12s ease-in-out;
+}
+
+
+
+
+.radio-group-bdt input[type="radio"]:checked::after,
+.checkbox-group-bdt input[type="checkbox"]:checked::after {
+  transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+
+/* Campo "Outro" verde */
+.radio-option-bdt .input-outro-bdt,
+.checkbox-option-bdt .input-outro-bdt,
+.radio-group-bdt .input-outro-bdt,
+.checkbox-group-bdt .input-outro-bdt {
+  width: 260px;
+  max-width: 100%;
+  margin-top: 6px;
+  background: #f3fff6;
+  border: 1px solid #d6f0db;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+
+
+
+.input-outro-bdt:disabled {
+  opacity: 0.7;
+  background: #f7f7f7;
+}
+
+
+
+
+/* ===== BOTÃO FINALIZAR ===== */
+.btn-finalizar-bdt {
+  margin-top: 10px;
+  background-color: #805aed;
+  color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+
+
+
+.btn-finalizar-bdt:hover {
+  background-color: #6b43db;
+}
+
+
+
+
+/* ===== FOOTER ===== */
+
+
+#footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+
+
 
 #footer_content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  padding: 1rem 2rem;
-  text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-align: center;
 }
 
+
+
+
 #footer_texts {
-  text-align: left;
+    text-align: left;
 }
+
+
+
 
 #footer_texts h3,
 #footer_texts h5 {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  color: #000;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #000;
 }
+
+
+
 
 #footer_logo img {
-  width: 180px;
-  height: auto;
+    width: 180px;
+    height: auto;
 }
+
+
+
 
 #footer_email i {
-  font-size: 1.25rem;
-  color: #805aed;
+    font-size: 1.25rem;
+    color: #805aed;
 }
+
+
+
 
 #footer_copyright {
-  text-align: center;
-  font-size: 0.85rem;
-  color: #777;
-  padding: 0.5rem;
-  font-weight: 100;
-}
-
-@media (max-width: 768px) {
-  #footer_content {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  #footer_texts,
-  #footer_email {
     text-align: center;
-  }
+    font-size: 0.85rem;
+    color: #777;
+    padding: 0.5rem;
+    font-weight: 100;
 }
 
-/* Main - Banco de Talentos */
-.main-content {
-  background-color: #EE9866;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-}
 
-.formulario {
-  background: #DFC8EF;
-  border-radius: 12px;
-  padding: 40px;
-  max-width: 700px;
-  width: 100%;
-  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
-}
 
-.formulario h1 {
-  font-size: 40px;
-  font-weight: 700;
-  color: #2e2e2e;
-  margin-bottom: 10px;
-}
-
-.subtitulo {
-  color: #805aed;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 30px;
-}
-
-/* Form Elements */
-form label {
-  display: block;
-  font-weight: 600;
-  font-size: 14px;
-  color: #2e2e2e;
-  margin-bottom: 8px;
-  margin-top: 15px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form select,
-form input[type="number"] {
-  width: 100%;
-  padding: 10px 15px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  font-size: 14px;
-  transition: border-color 0.3s ease;
-  background-color: #fff;
-}
-
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form select:focus,
-form input[type="number"]:focus {
-  border-color: #805aed;
-  outline: none;
-}
-
-/* Radio e Checkbox */
-.radio-group,
-.checkbox-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  margin: 8px 0;
-}
-
-.radio-group label,
-.checkbox-group label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: normal;
-  font-size: 14px;
-  color: #2e2e2e;
-}
-
-/* 🔹 Estilo único e padronizado para todos */
-input[type="radio"],
-input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #FF6214;
-  border-radius: 50%; /* sempre redondo */
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  vertical-align: middle;
-  background: #fff;
-  transition: all 0.2s ease;
-}
-
-/* 🔹 Preenchido quando marcado */
-input[type="radio"]:checked::after,
-input[type="checkbox"]:checked::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background: #6750A4;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Botão Finalizar */
-.btn-finalizar {
-  margin-top: 25px;
-  background-color: #805aed;
-  color: white;
-  font-weight: 700;
-  font-size: 18px;
-  border: none;
-  padding: 15px 25px;
-  border-radius: 8px;
-  cursor: pointer;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
-
-.btn-finalizar:hover {
-  background-color: #6d47d9;
-}
-
-/* Inputs "Outro" */
-.outro-input {
-  margin-left: 8px;
-  max-width: 250px;
-  background-color: #fff;
-}
 
 @media (max-width: 768px) {
-  .formulario {
-    padding: 25px 20px;
-  }
-  .main-content {
-    padding: 20px 10px;
-  }
-  .radio-group,
-  .checkbox-group {
+    #footer_content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    #footer_texts,
+    #footer_email {
+        text-align: center;
+    }
+}
+
+
+/* ======================================================================================================================================== */
+/* TESTE DE PERFIL */
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.2px;
+}
+
+
+
+
+html, body {
+    height: 100%;
+    display: flex;
     flex-direction: column;
-  }
-  #footer_content {
-    grid-template-columns: 1fr;
-  }
-  .outro-input {
+    background-color: #5E3EA1;
+}
+
+
+
+
+body {
+    background-color: #6042a6;
+}
+
+
+
+
+/* ================= HEADER ================= */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+#logo-header {
+    height: 50px;
+}
+
+
+
+
+#nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+
+#nav-menu li a {
     display: block;
-    margin-left: 0;
-    margin-top: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+
+
+
+#nav-menu li a:hover {
+    transform: scale(1.08);
+}
+
+
+
+
+/* Cores dos botões do menu */
+.nav-item-roxo a {
+    background-color: #DFC8EF;
+}
+
+
+
+
+.nav-item-roxo a:hover {
+    background-color: #C9A3E2;
+}
+
+
+
+
+.nav-item-laranja a {
+    background-color: #EE9866;
+}
+
+
+
+
+.nav-item-laranja a:hover {
+    background-color: #E77A4C;
+}
+
+
+
+
+
+
+/* ================= MAIN ================= */
+#mainContent-perf {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.caixa-perfil-perf {
+    background-color:#FFD2B2; /* roxo claro */
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 800px;
+    width: 80%;
+}
+
+
+
+
+/* Botão iniciar */
+#startButton-perf {
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+
+
+
+#startButton-perf:hover {
+    background-color: #7b1fa2;
+    transform: scale(1.05);
+}
+
+
+
+
+/* ================= QUIZ ================= */
+#quizSection-perf {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 50px;
+    background: #FFD2B2;
+    border-radius: 20px;
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+
+
+#quizQuestion-perf {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+
+
+
+#quizOptions-perf {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+
+
+
+#quizOptions-perf label {
+    display: block;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+
+
+#quizOptions-perf input[type="checkbox"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    accent-color: #805AED;
+}
+
+
+
+
+/* Navegação */
+#quizNavigation-perf {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+
+
+#prevButton-perf,
+#nextButton-perf {
+    background: #805AED;
+    border: none;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+
+
+
+#prevButton-perf:hover,
+#nextButton-perf:hover {
+    transform: scale(1.15);
+    background: #6A3DE8;
+}
+
+
+
+
+/* Barra de progresso */
+.quiz-progress-perf {
+    margin-top: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+}
+
+
+
+
+#progressBar-perf {
+    height: 100%;
+    width: 0%;
+    background: #805AED;
+    transition: width 0.4s ease;
+}
+
+
+
+
+/* Hidden */
+.hidden-perf {
+    display: none;
+}
+
+
+
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* ================= RESULTADO ================= */
+#resultSection-perf .titulo-resultado-perf {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+
+
+
+#resultSection-perf .result-description-perf {
+    font-size: 1rem;
+    color: #000;
+}
+
+
+
+
+#resultSection-perf .restart-btn-perf {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 32px;
+    background: #6a0dad;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+
+
+#resultSection-perf .restart-btn-perf:hover {
+    background: #7b1fa2;
+    transform: scale(1.05);
+}
+
+
+
+
+/* ================= FOOTER ================= */
+
+
+#footer {
     width: 100%;
-  }
+    background-color: #f1f1f1;
+    color: #333;
 }
 
-/* Textarea */
-textarea {
-  width: 100%;
-  min-height: 80px;
-  padding: 10px;
-  margin-top: 0.5rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  resize: vertical;
-  background-color: #fff;
+
+
+
+#footer_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-align: center;
 }
 
-/* Ajuste de tamanho e alinhamento para radios e checkboxes */
-input[type="radio"],
-input[type="checkbox"] {
-  width: 18px;   /* deixa todos com mesmo tamanho */
-  height: 18px;  /* altura igual */
-  margin: 0 8px 0 0; /* espaço à direita */
-  vertical-align: middle; /* alinha com o texto */
-  accent-color: #a64ac9; /* cor personalizada (moderno, funciona nos navegadores atuais) */
+
+
+
+#footer_texts {
+    text-align: left;
 }
 
-/* Garante que os labels fiquem alinhados */
-.radio-group label,
-.checkbox-group label {
-  display: flex;
-  align-items: center;  /* centraliza verticalmente */
-  gap: 6px;             /* espaço entre o input e o texto */
-  line-height: 1.4;
+
+
+
+#footer_texts h3,
+#footer_texts h5 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #000;
 }
 
-/* Força todos os radios a serem círculos perfeitos */
-input[type="radio"] {
-  appearance: none;       /* remove estilo padrão do navegador */
-  -webkit-appearance: none;
-  -moz-appearance: none;
 
-  width: 18px;
-  height: 18px;
-  border: 2px solid #FF6214;
-  border-radius: 50%;     /* 🔹 garante círculo */
-  cursor: pointer;
-  position: relative;
+
+
+#footer_logo img {
+    width: 180px;
+    height: auto;
 }
 
-/* bolinha preenchida no meio quando selecionado */
-input[type="radio"]:checked::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 8px;
-  height: 8px;
-  background-color: #6750A4;
-  border-radius: 50%;     /* 🔹 garante círculo interno */
+
+
+
+#footer_email i {
+    font-size: 1.25rem;
+    color: #805aed;
 }
 
-/* Deixa TODOS iguais (checkbox e radio) */
-input[type="radio"],
-input[type="checkbox"] {
-  appearance: none;        /* remove estilo padrão */
-  -webkit-appearance: none;
-  -moz-appearance: none;
 
-  width: 18px;
-  height: 18px;
-  border: 2px solid #FF6214;
-  border-radius: 50%;      /* 🔹 sempre bolinha */
-  cursor: pointer;
-  position: relative;
-  margin-right: 6px;
+
+
+#footer_copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
+    padding: 0.5rem;
+    font-weight: 100;
 }
 
-/* Bolinha preenchida quando marcado */
-input[type="radio"]:checked::before,
-input[type="checkbox"]:checked::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 8px;
-  height: 8px;
-  background-color: #6750A4;
-  border-radius: 50%;      /* 🔹 mantém redondo */
+
+
+
+@media (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    #footer_texts,
+    #footer_email {
+        text-align: center;
+    }
 }
 
-/* estilo base para todos os radios */
-input[type="radio"] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 18px;
-  height: 18px;
-  border: 2px solid #ff6600; /* laranja */
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  background: #fff;
+
+
+
+
+
+/* Botão final do quiz */
+#quizNavigation-perf .final-btn-perf {
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: bold;
+    background: #6a0dad;
 }
 
-/* quando marcado */
-input[type="radio"]:checked::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  background: #5a2d82; /* roxo */
-  border-radius: 50%;
-  transform: translate(-50%, -50%); /* centraliza perfeitamente */
+
+
+
+#quizNavigation-perf .final-btn-perf:hover {
+    background: #7b1fa2;
+    transform: scale(1.05);
 }
+
+
+
 
   
