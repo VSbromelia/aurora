@@ -1,108 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste de Perfil em Tecnologia</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Teste de Perfil</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!--Header-->
-    <header class="header">
-      <img src="imagens/aurora_logo.png" alt="Logo do Projeto">
-      <ul class="Header">
-        <li class="nav-item-roxo"><a href="index.html">Início</a></li>
-        <li class="nav-item-laranja"><a href="/componets/dados.html">Painel de Dados</a></li>
-        <li class="nav-item-roxo"><a href="/componets/perfil.html">Teste de Perfil</a></li>
-        <li class="nav-item-laranja"><a href="/componets/talentos.html">Banco de Talentos</a></li>
-        <li class="nav-item-roxo"><a href="/componets/conteudos.html">Conteúdo</a></li>
-        <li class="nav-item-laranja"><a href="/componets/feedback.html">Feedback</a></li>
-      </ul>
-        <div class="auth-buttons">
-          <a href="/componets/login.html" class="btn btn-login">Login</a>
-          <a href="/componets/registro.html" class="btn btn-registro">Registro</a>
-        </div>
-    </header>
+ 
+  <!-- Header -->
+  <header class="header" id="header">
+    <img src="imagens/aurora_logo.png" alt="Logo do Projeto" class="logo-header" id="logo-header">
 
 
-  
-        <header class="banner">
-          <h1>Descubra sua área em Tecnologia</h1>
-          <p>Responda ao quiz e veja qual carreira combina mais com você!</p>
-          <button id="startBtn">Iniciar</button>
-        </header>
-      
-        <main id="quizContainer" class="hidden">
-          <form id="quizForm">
-            <!-- Perguntas -->
-            <fieldset>
-              <legend> 1) O que mais te atrai em tecnologia?</legend>
-              <label class="option"><input type="radio" name="q1" data-area="frontend"> Criar interfaces bonitas e acessíveis</label>
-              <label class="option"><input type="radio" name="q1" data-area="backend"> Arquitetura e lógica do servidor (APIs)</label>
-              <label class="option"><input type="radio" name="q1" data-area="datascience"> Trabalhar com dados e métricas</label>
-              <label class="option"><input type="radio" name="q1" data-area="devops"> Infraestrutura, automação e nuvem</label>
-            </fieldset>
-      
-            <fieldset>
-              <legend> 2) Em uma equipe você prefere:</legend>
-              <label class="option"><input type="radio" name="q2" data-area="uxui"> Prototipar e testar com usuárias</label>
-              <label class="option"><input type="radio" name="q2" data-area="mobile"> Construir apps para celular</label>
-              <label class="option"><input type="radio" name="q2" data-area="security"> Proteger sistemas e vulnerabilidades</label>
-              <label class="option"><input type="radio" name="q2" data-area="fullstack"> Fazer tanto front quanto back</label>
-            </fieldset>
-      
-            <fieldset>
-              <legend> 3) O que você mais gosta de estudar?</legend>
-              <label class="option"><input type="radio" name="q3" data-area="ai"> Machine learning e IA</label>
-              <label class="option"><input type="radio" name="q3" data-area="dataeng"> Pipelines e engenharia de dados</label>
-              <label class="option"><input type="radio" name="q3" data-area="dba"> Bancos de dados e performance</label>
-              <label class="option"><input type="radio" name="q3" data-area="game"> Games e engines</label>
-            </fieldset>
-      
-            <fieldset>
-              <legend> 4) Como prefere aprender?</legend>
-              <label class="option"><input type="radio" name="q4" data-area="bootcamp"> Cursos práticos e projetos rápidos</label>
-              <label class="option"><input type="radio" name="q4" data-area="degree"> Graduação / estudos teóricos</label>
-              <label class="option"><input type="radio" name="q4" data-area="cert"> Certificações e exames técnicos</label>
-              <label class="option"><input type="radio" name="q4" data-area="self"> Autoaprendizado e tutoriais</label>
-            </fieldset>
-      
-            <button type="submit">Ver Resultado</button>
-          </form>
-        </main>
-      
-        <section id="result" class="hidden"></section>
-      
-        <script src="script.js"></script>
-    <footer>
-    <div id="footer_content">
-      <!-- Texto à esquerda -->
-      <div id="footer_texts">
-        <h3>Projeto Aurora - Visibilidade e Inclusão para mulheres na tecnologia</h3>
-        <p>Promovendo visibilidade, representatividade e empoderamento feminino no setor da tecnologia, conectando histórias, oportunidades e rede de apoio.</p>
+
+
+    <ul class="Header" id="nav-menu">
+      <li class="nav-item-roxo"><a href="index.html" id="nav-inicio">Início</a></li>
+      <li class="nav-item-laranja"><a href="#" id="nav-dados">Painel de Dados</a></li>
+      <li class="nav-item-roxo"><a href="perfil.html" id="nav-perfil">Teste de Perfil</a></li>
+      <li class="nav-item-laranja"><a href="bdtindex.html" id="nav-talentos">Banco de Talentos</a></li>
+      <li class="nav-item-roxo"><a href="#" id="nav-conteudo">Conteúdo</a></li>
+      <li class="nav-item-laranja"><a href="https://forms.gle/4qfh4TtFYjqHXjS69" id="nav-feedback">Feedback</a></li>
+    </ul>
+  </header>
+
+
+  <!-- Main -->
+  <main id="mainContent-perf">
+
+
+
+
+    <!-- Tela inicial -->
+    <section id="startSection-perf" class="caixa-perfil-perf section-inicial-perf">
+      <div class="start-content-perf">
+        <h2 class="section-title-perf">Teste de Perfil</h2>
+        <br>
+        <p class="section-description-perf">Descubra qual área da tecnologia combina com você!</p>
+        <br>
+        <button id="startButton-perf" class="btn-perf btn-start-perf" aria-label="Iniciar Quiz">Iniciar</button>
       </div>
-  
+    </section>
+
+
+
+
+    <!-- Quiz -->
+    <section id="quizSection-perf" class="quiz-box-perf hidden-perf">
+      <div class="quiz-content-perf">
+        <h2 id="quizQuestion-perf" class="quiz-question-perf">Pergunta</h2>
+        <div id="quizOptions-perf" class="options-perf"></div>
+
+
+
+
+        <!-- Navegação -->
+        <div id="quizNavigation-perf" class="quiz-nav-perf">
+          <button id="prevButton-perf" class="btn-nav-perf btn-prev-perf">←</button>
+          <button id="nextButton-perf" class="btn-nav-perf btn-next-perf">→</button>
+        </div>
+
+
+
+
+        <!-- Barra de progresso -->
+        <div class="quiz-progress-perf">
+          <div id="progressBar-perf" class="progress-bar-perf"></div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Caixa de resultado -->
+    <section id="resultSection-perf" class="caixa-perfil-perf section-result-perf hidden-perf">
+      <div id="resultContent-perf" class="result-content-perf">
+        <h2 class="titulo-resultado-perf">Resultado</h2>
+        <p class="result-description-perf">Sua área ideal da tecnologia é...</p>
+        <button id="restartButton-perf" class="restart-btn-perf btn-perf">Reiniciar</button>
+      </div>
+    </section>
+
+
+
+
+  </main>
+
+
+
+
+  <!-- Footer -->
+   <br>
+  <footer id="footer">
+    <div id="footer_content" class="footer-grid">
+
+
+
+
+      <!-- Texto à esquerda -->
+      <div id="footer_texts" class="footer-texts">
+        <h3 id="footer_titulo">Projeto Aurora - Visibilidade e Inclusão para mulheres na tecnologia</h3>
+        <p id="footer_descricao">
+          Promovendo visibilidade, representatividade e empoderamento feminino no setor da tecnologia, conectando histórias, oportunidades e rede de apoio.
+        </p>
+      </div>
+
+
+
+
       <!-- Logo centralizada -->
-      <div id="footer_logo">
+      <div id="footer_logo" class="footer-logo">
         <a href="index.html" id="logo-link">
-          <img src="imagens/aurora_logo.png" alt="Logo do site">
+          <img src="imagens/aurora_logo.png" alt="Logo do site" id="footer-logo-img">
         </a>
       </div>
-  
+
+
+
+
       <!-- Ícone de e-mail à direita -->
-      <div id="footer_email">
-        <p>Aura</p>
-        <p> Mulheres na tecnologia</p>
-        <a href="#" class="footer-email" id="Email">
+      <div id="footer_email" class="footer-email">
+        <p id="email-title">Mulheres na tecnologia</p>
+        <a href="#" class="footer-email" id="email-link">
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
+
+
+
+
     </div>
-  
     <div id="footer_copyright">
       &#169; 2025 Todos os direitos reservados
     </div>
-    <script src="script.js"></script>    
+  </footer>
+   <script src="perfil.js"></script>
 </body>
 </html>
