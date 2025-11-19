@@ -1167,7 +1167,55 @@ body {
     transform: scale(1.05);
 }
 
+/* estilização da página de conteudo */
+  
+/* ===== CONTEÚDO ===== */
+.conteudo {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .secao h2 {
+    color: #805AED;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  /* ===== COMUNIDADE ===== */
+  .comunidade .post {
+    background-color: #CFA3FF;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  }
+  
+  .post-header { font-weight: bold; margin-bottom: 10px; color: #805AED; }
+  .post-header span { font-weight: normal; color: #555; margin-left: 5px; }
+  
+  .comentario {
+    background-color: #E6C9FF;
+    border-left: 4px solid #9D4EDD;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  .nova-resposta {
+    background-color: #fff;
+    border: 1px solid #DDD;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
 
-
+  .carousel-card img {
+    width: 100%;
+    height: 180px; /* ou 200px, se quiser maior */
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
 
   
